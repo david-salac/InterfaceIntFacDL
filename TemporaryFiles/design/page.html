@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Static page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="all" href="icon/css/font-awesome.css">
+        <link rel="stylesheet" media="all" href="style.css">
+        <script src="../../jquery.js"></script>
+    </head>
+    <body>
+        <!--[if IE]><div class="noExplorer"><strong>Please do not use your current browser - Microsoft Internet Explorer is deprecated. You could simply install and use Mozilla Firefox or Google Chrome browsers - both are available for free. Via this browser application will not work correctly.</strong></div><![endif]-->
+        
+        <aside>
+            <div class="content">
+                <a href="javascript:;" id="siteMap">&nbsp;</a>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="icon fa-flag"><span>Overview</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon fa-file-text-o selected"><span>User guide</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon fa-list-ol"><span>Tasks</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon fa-server"><span>Stations</span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon fa-users"><span>Users</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </aside>
+        <header>
+            <ul id="topMenu">
+                <li class="separator"><a class="icon fa-user" href="#">Admin</a></li>
+                <li>Time of login: 13:20</li>
+                <li id="logout"><a href="#" class="icon fa-sign-out">Logout</a></li>
+            </ul>
+            <div class="clear"></div>
+        </header>
+        <article>
+            <div id="logo">
+                <a href="#">
+                    <img src="logo.svg" alt="Diploma Thesis" >
+                    <span>DIPLOMA THESIS</span>
+                </a>
+                <div class="right">
+                    <strong>DIPLOMA THESIS APPLICATION</strong>
+                    <p>Welcome to application designed for solving integer factorization and discrete logarithm problem.</p>
+                    <em>Author: David Salač</em>
+                </div>
+                <div class="clear"></div>
+            </div>
+            
+            <div class="box">
+                <h2>Shortcuts</h2>
+                
+                <p>
+                <a href="#" class="navbutton">Manual</a> <a href="#" class="navbutton">Tasks</a> <a href="#" class="navbutton">Stations (nods)</a>  <a href="#" class="navbutton">Users</a>
+                </p>
+                <p>Zkouška</p>
+                <h3>Test</h3>
+                <p>Další věc</p>
+            </div>
+            <div class="box">
+                <h2>Toto je box</h2>
+                <p>Zkouška</p>
+                <h3>Test</h3>
+                <p>Další věc <a href="#">Test</a></p>
+            </div> 
+            <div class="box">
+                <h2>Toto je box</h2>
+                <p>Zkouška</p>
+                <h3>Test</h3>
+                <p>Další věc</p>
+            </div>
+            <div class="box">
+                <h2>Toto je box</h2>
+                <p>Zkouška</p>
+                <h3>Test</h3>
+                <p>Další věc <a href="#">Test</a></p>
+            </div> 
+            <div class="box">
+                <h2>Toto je box</h2>
+                <p>Zkouška</p>
+                <h3>Test</h3>
+                <p>Další věc</p>
+            </div>
+            <div class="box">
+                <h2>Toto je box</h2>
+                <p>Zkouška</p>
+                <h3>Test</h3>
+                <p>Další věc <a href="#">Test</a></p>
+            </div>
+            
+            <div class="box">
+                <h2>The form</h2>
+                
+                <h3 id="insert-task">Insert new task to system</h3>
+                <form action="#" method="post">
+                    <label for="task_type">Task to cryptanalysis: </label>
+                    <select id="task_type" name="task_type">
+                        <option value="rsa">RSA cypher</option>
+                        <option value="elgamal">ElGamal cypher</option>
+                        <option value="diffiehellman">Diffie-Hellman key exchange</option>
+                    </select> <div class="clear">&nbsp;</div>
+                    <div id="task-content-part"></div>
+                    
+                    <label for="submitF">Submit request:</label>
+                    <input type="submit" value="INSERT" id="submitF">
+                    <script type="text/javascript">
+                        function plotRSA() {
+                            return '<div id="rsa"><label for="rsa_n">Modulus <em>n</em> as hexadecimal number:</label><input type="text" pattern="[a-fA-F\d]+" id="rsa_n" name="rsa_n" required placeholder="Modulus n"><label for="rsa_c">Cypher text <em>c</em> as hexadecimal number:</label><input type="text" pattern="[a-fA-F\d]+" id="rsa_c" name="rsa_c" required placeholder="Cyphertext c"><label for="rsa_e">Exponent <em>e</em> as hexadecimal number:</label><input type="text" pattern="[a-fA-F\d]+" id="rsa_e" name="rsa_e" required placeholder="Exponent e"></div>';
+                        }
+                        function plotElGamal() {
+                            return '<div id="elgamal"> <label for="elgamal_p">Modulus <em>p</em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="elgamal_p" name="elgamal_p" required placeholder="Modulus p">  <label for="elgamal_g">Group generator <em>g</em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="elgamal_g" name="elgamal_g" required placeholder="Group generator g">  <label for="elgamal_h">Pubic key <em>h = g<sup>x</sup></em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="elgamal_h" name="elgamal_h" required placeholder="Public key h">  <label for="elgamal_c1">Cypher element <em>c<sub>1</sub></em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="elgamal_c1" name="elgamal_c1" required placeholder="Cyphertext c1">  <label for="elgamal_c2">Cypher element <em>c<sub>2</sub></em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="elgamal_c2" name="elgamal_c2" required placeholder="Cyphertext c2"> </div>';
+                        }
+                        function plotDiffieHellman() {
+                            return '<div id="diffiehellman"> <label for="diffiehellman_p">Modulus <em>p</em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="diffiehellman_p" name="diffiehellman_p" required placeholder="Modulus p"> <label for="diffiehellman_g">Group generator <em>g</em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="diffiehellman_g" name="diffiehellman_g" required placeholder="Group generator g"> <label for="diffiehellman_gpowa">Key <em>g<sup>a</sup></em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="diffiehellman_gpowa" name="diffiehellman_gpowa" required placeholder="Key (Alice)"> <label for="diffiehellman_gpowb">Key <em>g<sup>b</sup></em> as hexadecimal number:</label> <input type="text" pattern="[a-fA-F\d]+" id="diffiehellman_gpowb" name="diffiehellman_gpowb" required placeholder="Key (Bob)"> </div>';
+                        }
+                        function taskTypeVisibility(taskType) {
+                                if(taskType === "rsa") {
+                                    $("#task-content-part").html(plotRSA());
+                                } else if(taskType === "elgamal") {
+                                    $("#task-content-part").html(plotElGamal());
+                                } else if(taskType === "diffiehellman") {
+                                    $("#task-content-part").html(plotDiffieHellman());
+                                }
+                            }
+                        $(document).ready(function() {
+                            taskTypeVisibility($("#task_type option:checked").val());
+                            $("#task_type").change(function () {
+                                taskTypeVisibility($("#task_type option:checked").val());
+                                
+                            });
+                        });
+                    </script>
+                </form>
+                
+                <form action="#" method="post">
+                    <label for="idComputer">Computer ID:</label>
+                    <input type="text" id="idComputer" placeholder="Computer id" required="">
+                    <label for="numberComp">Number of computers:</label>
+                    <input type="number" id="numberComp" placeholder="Computer number" required="">
+                    
+                    <label for="textA">Your remark:</label>
+                    <textarea cols="25" rows="5" required="" id="textA" placeholder="Remark..."></textarea>
+                    
+                    <div class="radioCheckedBoxFrame">
+                        <span>Popisek: </span>
+                        <input type="radio" value="test" name="test" id="testRad1"><label for="testRad1">Zkouška</label>
+                        <input type="radio" value="test" name="test" id="testRad2"><label for="testRad2">Zkouška</label>
+                        <input type="radio" value="test" name="test" id="testRad3"><label for="testRad3">Zkouška</label>
+                        <input type="radio" value="test" name="test" id="testRad4"><label for="testRad4">Zkouška</label>
+                    </div>
+                    <div class="radioCheckedBoxFrame">
+                        <span>Popisek: </span>
+                        <input type="checkbox" value="test" name="test" id="testRad5"><label for="testRad5">Zkouška</label>
+                        <input type="checkbox" value="test" name="test" id="testRad6"><label for="testRad6">Zkouška</label>
+                        <input type="checkbox" value="test" name="test" id="testRad7"><label for="testRad7">Zkouška</label>
+                        <input type="checkbox" value="test" name="test" id="testRad8"><label for="testRad8">Zkouška</label>
+                    </div>
+                    <label for="select">Zkouška selectu:</label>
+                    <select id="select" name="test">
+                        <option>Abcd</option>
+                        <option>Abcd</option>
+                        <option>Abcd</option>
+                    </select>
+                    
+                    <label for="submitForm">Do not forget submit this form:</label>
+                    <input type="submit" value="Sand" id="submitForm">
+                </form>
+            </div>
+            
+            <div class="box">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Aewrewrwe</td><td>gfhdgfhA</td><td>ewrweA</td><td>dfgdfgA</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aewrewrwe</td><td>gfhdgfhA</td><td>ewrweA</td><td>dfgdfgA</td>
+                        </tr>
+                        <tr>
+                            <td>Aewrewrwe</td><td>gfhdgfhA</td><td>ewrweA</td><td>dfgdfgA</td>
+                        </tr>
+                        <tr>
+                            <td>Aewrewrwe</td><td>gfhdgfhA</td><td>ewrweA</td><td>dfgdfgA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </article>
+        <footer>
+            <div class="box">
+                 The copyright holder of this application (and also the whole content of diploma thesis) is Technical University of Liberec.
+            </div>
+        </footer>
+    </body>
+</html>

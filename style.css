@@ -1,0 +1,338 @@
+/**
+ * Author:  David Salac
+ * Project: Diploma Thesis (2017)
+ * Title:   This file define CSS styles for layout of system web pages
+ */
+@media all {
+    html {
+        font-family: 'Arial', sans-serif;
+        color: #6b6b6b;
+        font-size: 16pt;
+        margin: 0; padding: 0;
+    }
+    body {margin: 0; padding: 0;}
+    a {
+        color: #b52e31;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black;
+
+    }
+    aside {
+        position: fixed; top: 0; left: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+        width: 237px;
+        height: 100vh;
+        background: linear-gradient(to right, #a39c97, rgba(255,255,255,0));
+        background-size: 7px 100%;
+        background-repeat: repeat-y;
+        background-position: right top;
+    }
+    aside .content {
+        background: #b52e31;
+        height: 100vh;
+        width: 230px;
+        float: left;
+    }
+    
+    input:read-only {
+        background: #e5e6e7;
+        border: 1px solid #bdc3c7;
+    }
+
+    .error, .warning {
+        background: #b52e31;
+    }
+    .error p, .notice p {
+        color: white;
+    }
+    .error p:last-of-type, .notice p:last-of-type {
+        margin-bottom: 0px;
+    }
+    .notice {
+        background: #0294cf;
+    }    
+    .warning {
+        background: #ffd42a;
+    }
+
+    aside ul {
+        margin: 0; padding: 0; clear: both;
+        list-style: none;
+    }
+    asid ul li {
+        float: left;
+        clear: both;
+        list-style: none;
+    }
+    aside ul li a {
+        display: block;
+        width: 100%;
+        border-top: 1px solid #b35c5f;
+        padding: 15px 10px 15px 30px;
+        color: white;
+        box-sizing: border-box;
+    }
+    aside ul li:last-child a {
+        border-bottom: 1px solid #b35c5f;
+    }
+    aside ul li a:hover, aside ul li a.selected {
+        background: #262626;
+        border-left: 5px solid #4a4a4a;
+        padding-left: 25px;
+        transition: 0.2s;
+    }
+    aside .content > a {
+        display: block;
+        margin: 15px 20px 5px 15px;;
+        float: right;
+    }
+    aside a:hover {
+        color: white;
+    }
+    aside .content > a:before {
+        font-family: 'FontAwesome';
+        content: '\f0e8';
+        display: block;
+        width: 45px;
+        height: 45px;
+        padding: 8px 10px 0 9px; box-sizing: border-box;    
+        background: #262626;
+        font-size: 130%;
+        color: white;
+    }
+    header {
+        background: #262626;
+        padding: 15px 10px 15px 260px;
+        color: white;
+    }
+    header ul {
+        list-style: none;
+        padding: 0; margin: 0; width: 100%; display: block;
+    }
+    .clear {
+        clear: both;
+    }
+    header ul li {
+        float: left;
+    }
+    header ul li a {
+        color: white;
+    }
+    header ul li a:hover {
+        color: #b52e31;
+    }
+    header ul li.separator {
+        margin-right: 20px;
+        padding-right: 20px;
+        border-right: 1px solid white;
+    }
+    header ul #logout {
+        float: right;
+        margin: 0 20px 0 0;
+        padding: 0;border: none;
+    }
+    .icon:before {
+        padding-right: 20px;
+        font-family: 'FontAwesome';
+    }
+    article, footer {
+        width: 100%;
+        padding: 40px 20px 20px 280px;
+        float: right;
+        box-sizing: border-box;
+    }
+    #logo a {
+        display: block;
+        float: left;
+        text-align: center;
+        font-size: 12pt;
+        width: 200px;
+    }
+    #logo a:hover span {
+        color:black;
+    }
+    #logo a span {
+        display: block; width: 100%; font-weight: bold; font-size: 130%;
+        color: #b52e31;
+    }
+
+    #logo a img {
+        width: 130px; height: auto;
+    }
+    #logo .right {
+        text-align: right
+    }
+    #logo .right strong {
+        color: #b52e31;
+        font-size: 120%;
+    }
+    #logo > a {
+        padding-bottom: 25px;
+        padding-right: 20px;
+    }
+
+    .box {
+        clear: both;
+        margin: 20px 20px 20px 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 2px 2px #cacaca;
+        border-radius: 5px;
+    }
+    .box h2, .box h3 {
+        color: #b52e31;
+        font-size: 1.3em;
+    }
+    .box h2:first-of-type, .box h3:first-of-type { margin-top: 0;}
+    .box p:first-of-type { margin-top: 0;}
+    .box h3 {
+        font-size: 1.1em;
+    }
+
+    .box label {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+    }
+    .box label:first-of-type {
+        margin-top: 0;
+    }
+    .box input, .box textarea, .box select {
+        box-sizing: border-box;
+
+        font-size: 16pt;
+
+        width: 80%;
+        padding: 10px;
+    }
+    .box input[type=submit] {
+        width: auto;
+        background: #262626;
+        border: none;
+        padding: 10px 15px 10px 15px;
+        height: 55px;
+        color: white;
+        font-size: 110%; font-weight: bold;
+    } .box .button {
+        background: #262626;
+        color: white;
+        display: inline-block;
+        margin-top: 0;
+        padding: 14px 15px 14px 15px;
+        margin-right: 20px; margin-left: 20px;
+        font-size: 110%; font-weight: bold;
+    }
+
+    .box .radioCheckedBoxFrame {
+        margin: 15px 0 15px 0;
+    }
+    .box .radioCheckedBoxFrame label {
+        width: auto;
+        display: inline-block;
+        margin: 0 20px 0 10px;
+    }
+    .box input[type=radio],.box input[type=checkbox] {
+        width: auto;
+    }
+    .box .radioCheckedBoxFrame span {
+        width: 100%;
+        display: block;
+    }
+
+    .box table {
+        width: 100%;
+        border-collapse: collapse;
+        box-sizing: border-box;
+    }
+    .box table tr td {
+        padding: 10px;
+        border: 1px solid #cacaca;
+    }
+    .box table thead {
+        font-weight: bold;
+    }
+
+    .noExplorer {
+        padding: 0; margin: 0;
+        width: 100%;
+        background: black; color: red; font-weight: bold; font-size: 120%;
+        box-sizing: border-box;
+        padding: 20px 20px 20px 270px ;
+    }
+    .box .navbutton {
+        background: #b52e31;
+        padding: 20px 30px 20px 30px;
+        margin: 10px;
+        border-radius: 10px;
+        display: block;
+        float: left;
+        color: white;
+        font-weight: bold;
+    }
+    .box .navbutton:hover {
+        color: black;
+    }
+    .left {
+        float: left;
+    }
+    .rightcolumn, .leftcolumn {
+        float: right;
+        width: 50%;
+        display: block;
+    } .leftcolumn {float: left; padding-right: 10px; box-sizing: border-box;}
+    .notSolved {
+        background: #ffe1e2;
+    }
+    .rightNowSolving {
+        background: #fffde1;
+    }
+    .listLargeStep li {
+        margin-bottom: 10px;
+    }
+    
+}
+@media screen and (max-width: 1200px) { 
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    #logo a {
+        display: none;
+    }
+    #logo .right {
+        text-align: left;
+        float: none;
+    }
+}
+@media screen and (max-width: 800px) { 
+    aside {
+        overflow-y: auto;
+    }
+    aside .content {
+        min-height: 400px;
+    }
+    aside ul li a > span {
+        display: none;
+    }
+    aside, aside .content {
+        width: 80px;
+    }
+    article, footer, header {
+        padding-left: 90px;
+    }
+    .timeOfLogin {
+        display: none;
+    }
+    header ul li.separator {
+        margin-right: 5px;
+        padding-right: 0;
+        border:none;
+    }
+    #logo {
+        display: none;
+    }
+}

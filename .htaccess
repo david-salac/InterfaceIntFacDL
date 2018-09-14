@@ -1,0 +1,13 @@
+# Author:  David Salac
+# Project: Diploma Thesis (2017)
+# Title:   This is .htaccess script of application
+
+# Use PHP70 as default
+AddHandler application/x-httpd-php70 .php
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /opt/php70/lib
+</IfModule>
+
+RewriteEngine On
+RewriteRule index\.html /index.php
+RewriteRule (.*)\.html$ /?id=$1

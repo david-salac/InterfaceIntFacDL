@@ -1,0 +1,102 @@
+/**
+ * Author:  David Salac
+ * Project: Diploma Thesis (2017)
+ * Title:   This file define CSS styles for layout of login page of system
+ */
+html {
+    background: #f3f3f3;
+    font-family: 'Arial', sans-serif;
+    color: #6b6b6b;
+    font-size: 16pt;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 760px;
+}
+h1 {
+    margin-top: 80px;
+    color: #d95459;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.whiteBack {
+    background: white;
+}
+.clear {
+    clear: both;
+}
+.left, .right {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.right {
+    float: right;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0 30px 0;
+    height: 50px;
+}
+h2 {
+    padding: 30px 20px 0 20px;
+    color: black;
+}
+p {
+    margin-top: 30px;
+    text-align: center;
+}
+input[type=submit] {
+    background: #d95459;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 15pt;
+} #contact {
+    background: #1abc9c;
+    border: none;
+    
+    padding: 13px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    
+    margin: 10px 0 30px 0;
+    font-size: 15pt;
+    text-align: center;
+    height: 50px;
+}
+strong {
+    color: red;
+    font-size: 120%;
+}
+.whiteBack > strong {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    color: #d95459;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) { 
+    h1 {
+        margin-top: 10px;
+    }
+    .left, .right {
+        float: none;
+        width: 100%;
+    }
+}

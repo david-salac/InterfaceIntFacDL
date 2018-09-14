@@ -1,0 +1,18 @@
+MANUAL PAGE FOR WEB SYSTEM INSTALATION
+Author: David Salac, 2017
+
+1) Host system requirements:
+    a) PHP in version 7.0.* or 7.1.*
+    b) MySQL with InnoDB engine, in version 5.*
+
+2) First step of installing:
+    a) Copy all files to target web hosting server (you probably would use your FTP account)
+    b) Configure your MySQL connection. This has to be done in file Config.php (simply by editing of the file in text editor)
+    c) Go to your phpMyAdmin account and install database. Copy content of file "database.sql" to SQL command in selected database.
+
+3) Now you have successfully installed your system. You can go to target URL in your browser and use it. First user has following sing-in information:
+    login:    admin
+    password: a1b456
+    You should change this sing-in informations right after first successful sing-in.
+
+Enjoy using of application!
